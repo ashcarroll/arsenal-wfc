@@ -1,30 +1,106 @@
-nav {
-    width: 100%;
-    background-image: linear-gradient( to top, rgba(255,255,255,0), rgba(255,255,255,1));
-    color: black;
+body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #063672;
 }
 
-nav a {
+/* Navigation Bar Styling */
+nav{
+    background-color: white;
+    border-bottom: 2px solid #DB0007;
+    overflow: hidden;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
     float: left;
-    padding: 16px;
-    color: black;
+}
+
+nav ul li a{
+    display: block;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
     text-decoration: none;
-    width: 20%;
+    text-align: center;
+    line-height: 50px;
+    padding: 14px 16px;
+    height: 50px;
+}
+
+nav ul li a:hover{
+    color: #063672;
+    text-decoration: underline #DB0007; 
+}
+
+nav ul li a.active{
+    background-color: #DB0007;
+    color: white;
+}
+
+/* Image Styling */
+.hero {
+    max-width: 100%;
+    height:auto;
+}
+
+/* Div Styling */
+
+div {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.title{
+    border-bottom: 2px solid #DB0007;
+}
+
+.title h1 {
+    color: #063672;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding: 5px;
+}
+
+.scorecard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
     text-align: center;
 }
 
-nav a:hover {
-    color: #063672;
+.team-info{
+
 }
 
-nav a:active {
-    color: #063672;
-    text-decoration: underline, #DB0007;
+.crest{
+
 }
 
-.home {
-    background-size: contain;
-    max-width: 100px;
-    min-width: 50px;
+.match-details{
+}
+
+/* Responsive Styling */
+
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .scorecard{
+        flex-direction: column;
+    }
+
+    .team-info, .match-details{
+        width: 100%;
+
+    }
 }
