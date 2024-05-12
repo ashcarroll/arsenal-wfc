@@ -8,6 +8,8 @@ nav{
     background-color: white;
     border-bottom: 2px solid #DB0007;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
     
 }
 
@@ -103,14 +105,14 @@ div {
     height:240px;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 #000000;
+    box-shadow: 0 4px 8px 0 #0000004f;
     position: relative;
 }
 
 .news-image {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: auto;
+    /* display: block; */
 
 }
 
@@ -121,24 +123,36 @@ div {
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
 
+.news-story h3{
+    padding-left: 4px;
+    line-height: 12px;
+}
+
+.news-story p{
+    padding: 4px;
+    line-height: 2px;
 }
 
 /* Responsive Styling */
 
 @media (max-width: 600px) {
-    nav ul li {
-        float: none;
-        display: block;
-        text-align: center;
+nav{
+    position: static;
+}
+
+nav ul li {
+    float: none;
+    display: block;
+    text-align: center;
     }
 
-    .scorecard{
-        flex-direction: column;
+.scorecard{
+    flex-direction: column;
     }
 
-    .team-info, .match-details{
-        width: 100%;
-
+.team-info, .match-details{
+    width: 100%;
     }
 }
