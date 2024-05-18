@@ -48,6 +48,7 @@ nav ul li a.active{
 .hero {
     max-width: 100%;
     height:auto;
+    
 }
 
 /* Div Styling */
@@ -135,6 +136,13 @@ div {
     line-height: 2px;
 }
 
+/* Tables */
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
 /* History */
 
 .history-list {
@@ -149,6 +157,57 @@ div {
     margin: 18px;
 }
 
+/* Player Bios */
+
+.position-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-container{
+    position: relative;
+    margin: 20px;
+    width: 240px;
+    height:100%;
+    overflow: hidden;
+}
+
+.player-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0637723d;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.player-container:hover .overlay {
+    height: 100%;
+}
+
+.player-text {
+    color: white;
+    background-color: #0637723d;
+    font-size: 26px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 /* Responsive Styling */
 
