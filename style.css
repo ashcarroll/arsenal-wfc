@@ -79,10 +79,21 @@ div {
     grid-template-rows: 50px 50px 50px 50px;
     align-items: center;
     justify-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #2e2e2e
 }
 
 .home {
     grid-area: 2 / 1 / 3 / 2;
+}
+
+.home h3 {
+    text-align: center;
+    font-weight: bold;
 }
 
 .home-scorer {
@@ -93,8 +104,24 @@ div {
     grid-area: 2 / 2 / 4 / 3;
 }
 
+.home-crest img {
+    width: auto;
+    height: 60px;
+}
+
 .match-date {
     grid-area: 1 / 3 / 2 / 4 ;
+}
+
+.match-date p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+
+.match-date .date{
+    font-weight: 800;
 }
 
 .score {
@@ -105,12 +132,29 @@ div {
     grid-area: 4 / 3 / 5 / 4;
 }
 
+.location p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 10px;
+    margin-top: 0;
+}
+
 .away-crest { 
     grid-area: 2 / 4 / 4 / 5;
 }
 
+.away-crest img {
+    width: auto;
+    height: 60px;
+}
+
 .away {
     grid-area: 2 / 5 / 3 / 6;
+}
+
+.away h3 {
+    text-align: center;
+    font-weight: bold;
 }
 
 .away-scorer {
