@@ -60,10 +60,12 @@ div {
 }
 
 .title{
+    margin-top: 40px;
     border-bottom: 2px solid #DB0007;
 }
 
 .title h1 {
+    font-size: 26px;
     color: #063672;
     height: fit-content;
     margin-top: 20px;
@@ -75,8 +77,8 @@ div {
 
 .scorecard {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 50px);
     align-items: center;
     justify-items: center;
     padding-top: 12px;
@@ -84,7 +86,8 @@ div {
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    color: #2e2e2e
+    color: #2e2e2e;
+    text-align: center;
 }
 
 .home {
@@ -94,10 +97,17 @@ div {
 .home h3 {
     text-align: center;
     font-weight: bold;
+    padding-left: 5px;
 }
 
 .home-scorer {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+.home-scorer p {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 5px;
 }
 
 .home-crest {
@@ -121,11 +131,15 @@ div {
 }
 
 .match-date .date{
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .score {
     grid-area: 2 / 3 /4 / 4;
+}
+
+.score h2 {
+    font-size: 28px;
 }
 
 .location {
@@ -135,7 +149,6 @@ div {
 .location p {
     text-align: center;
     font-size: 16px;
-    line-height: 10px;
     margin-top: 0;
 }
 
@@ -155,10 +168,17 @@ div {
 .away h3 {
     text-align: center;
     font-weight: bold;
+    padding-right: 5px;
 }
 
 .away-scorer {
-    grid-area: 3 / 5 / 4 / 6;
+    grid-area: 3 / 5 / 5 / 6;
+}
+
+.away-scorer p {
+    text-align: center;
+    font-size: 16px;
+    padding-right: 5px;
 }
 
 /* News Card */
@@ -312,13 +332,65 @@ nav ul li {
     display: block;
     text-align: center;
     }
+}
 
-.scorecard{
-    flex-direction: column;
-    }
+@media (max-width: 770px) {
+.scorecard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5px;
+}
 
-.team-info, .match-details{
-    width: 100%;
-    }
+.home {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.home-scorer {
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.home-crest {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.home-crest img {
+        width: auto;
+        height: 40px;
+}
+
+.match-date {
+    grid-area: 4 / 1 / 6 / 4;
+}
+
+.score {
+    grid-area: 6 / 1 / 7 / 4;
+}
+.location {
+    grid-area: 7 / 2 / 8 / 3;
+}
+
+.location p{
+    padding-top: 5px;
+}
+
+.away-crest { 
+    grid-area: 8 / 2 / 9 / 3;
+}
+
+.away-crest img {
+    width: auto;
+    height: 40px;
+}
+
+.away {
+    grid-area: 9 / 1 / 10 / 4;
+}
+.away-scorer {
+    grid-area: 10 / 1 / 11 / 4;
+}
+
 }
 
