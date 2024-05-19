@@ -26,7 +26,7 @@ nav ul li{
 nav ul li a{
     display: block;
     font-weight: bold;
-    color: rgb(46, 46, 46);
+    color: #2e2e2e;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
@@ -140,7 +140,27 @@ div {
 
 table {
     width: 100%;
+    margin: 20px auto;
     text-align: left;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: #DB0007 .1px solid;
+}
+
+thead {
+    background-color: #DB0007;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dfdfdf;
 }
 
 /* History */
@@ -230,3 +250,4 @@ nav ul li {
     width: 100%;
     }
 }
+
