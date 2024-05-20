@@ -280,7 +280,7 @@ tbody tr:nth-child(odd) {
 .player-container{
     position: relative;
     margin: 20px;
-    width: 240px;
+    width: 200px;
     height:100%;
     overflow: hidden;
 }
@@ -308,17 +308,69 @@ tbody tr:nth-child(odd) {
 }
 
 .player-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 30px);
     color: white;
-    background-color: #0637723d;
+    background-color: #0637728e;
     font-size: 26px;
     text-align: center;
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.player-text p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.name{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.position {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.shirt {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.number {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.age-title {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.age {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.caps {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.caps-no {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.goals {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.goals-no {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+
 
 /* Responsive Styling */
 
