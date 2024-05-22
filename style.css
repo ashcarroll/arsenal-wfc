@@ -206,10 +206,8 @@ div {
 }
 
 .news-image {
-    width: 130%;
+    width: 150%;
     height: auto;
-    /* display: block; */
-
 }
 
 .news-story {
