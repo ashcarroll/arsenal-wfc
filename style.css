@@ -188,8 +188,13 @@ div {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
-
 }
+
+.news-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .news-card {
     margin: 20px;
     width: 240px;
@@ -217,13 +222,18 @@ div {
 }
 
 .news-story h3{
+    font-size: 16px;
     padding-left: 4px;
-    line-height: 12px;
+    padding-bottom: 0px;
+    line-height: 0;
+
 }
 
 .news-story p{
+    font-size: 14px;
     padding: 4px;
-    line-height: 2px;
+    line-height: 16px;
+    padding-top: 0px;
 }
 
 /* Tables */
