@@ -264,8 +264,6 @@ tbody tr:nth-child(odd) {
 /* History */
 
 .history {
-    width: 90%;
-    margin: 40px;
     padding: 8px;
 }
 
