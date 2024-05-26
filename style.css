@@ -3,7 +3,6 @@ body{
     background-color: #063672;
 }
 
-/* Navigation Bar Styling */
 nav{
     background-color: white;
     border-bottom: 2px solid #DB0007;
@@ -45,14 +44,17 @@ nav ul li a.active{
     color: white;
 }
 
-/* Image Styling */
+.home-button{
+    height: 50px;
+}
+
+
 .hero {
     max-width: 100%;
     height:auto;
     
 }
 
-/* Div Styling */
 
 div {
     background-color: white;
@@ -95,7 +97,6 @@ footer a{
     color: white;
 }
 
-/* Results & Fixtures */
 
 .scorecard {
     display: grid;
@@ -203,7 +204,6 @@ footer a{
     padding-right: 5px;
 }
 
-/* News Card */
 
 .news-container{
     display: flex;
@@ -256,7 +256,6 @@ footer a{
     padding-top: 0px;
 }
 
-/* Tables */
 
 table {
     width: 100%;
@@ -283,7 +282,6 @@ tbody tr:nth-child(odd) {
     background-color: #dfdfdf;
 }
 
-/* History */
 
 .history {
     padding: 8px;
@@ -298,7 +296,6 @@ tbody tr:nth-child(odd) {
     margin-top: 30px;
     padding: 14px;
     border-radius: 6px;
-
 }
 
 .history dd{
@@ -307,8 +304,6 @@ tbody tr:nth-child(odd) {
     margin-left: 90px;
     margin-right: 20px;
 }
-
-/* Player Bios */
 
 .position-group{
     display: flex;
@@ -423,9 +418,6 @@ tbody tr:nth-child(odd) {
     grid-area: 6 / 2 / 7 / 3;
 }
 
-
-
-/* Responsive Styling */
 
 @media (max-width: 600px) {
 nav{
